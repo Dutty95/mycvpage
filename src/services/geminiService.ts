@@ -1,15 +1,5 @@
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
-import { ChatMessage } from "../types";
-
-// Helper to get API key safely for Vite
-const getApiKey = (): string => {
-  // Vite exposes env variables on import.meta.env
-  // They must start with VITE_ to be exposed to the client
-  if (import.meta.env && import.meta.env.VITE_API_KEY) {
-    return import.meta.env.VITE_API_KEY;
-  }
-  return '';
-};
+import { type ChatMessage } from "../types";
 
 const SYSTEM_INSTRUCTION = `
 You are the "Digital Twin" assistant for Mayowa E. Uwagbai, a highly skilled Polymath Professional. 
@@ -48,9 +38,12 @@ If asked for contact info, provide: Mayowa.uwagbai@gmail.com or +2348167745778.
 `;
 
 export const sendMessageToGemini = async (history: ChatMessage[], message: string): Promise<string> => {
-  const apiKey = getApiKey();
+  // Use Vite's import.meta.env to access variables
+  const apiKey = import.meta.env.VITE_API_KEY;
+  
   if (!apiKey) {
-    return "Error: API Key not found. Please ensure VITE_API_KEY is set in your .env file.";
+    console.error("API Key not found. Please ensure VITE_API_KEY is set in your .env file.");
+    return "Error: configuration issue (API Key missing).";
   }
 
   try {

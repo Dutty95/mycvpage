@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { ChatMessage } from '../types';
+import { type ChatMessage } from '../types';
 import { sendMessageToGemini } from '../services/geminiService';
 
 const Chatbot: React.FC = () => {

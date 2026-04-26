@@ -20,18 +20,8 @@ const Experience: React.FC = () => {
               <span className="mr-3 text-3xl">💼</span> Work History
             </h3>
             <div className="space-y-12 border-l-2 border-slate-700 ml-3 pl-8 relative">
-              
-              {/* Role 1: Naija Nomads */}
-              <div className="relative group">
-                <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-accent bg-primary group-hover:bg-accent transition-colors shadow-[0_0_10px_rgba(56,189,248,0.5)]"></span>
-                <h4 className="text-xl font-semibold text-white group-hover:text-accent transition-colors">Executive Assistant</h4>
-                <p className="text-accent text-sm mb-2 font-mono">Naija Nomads, Lagos | Feb 2025 – Present</p>
-                <p className="text-slate-400 text-sm leading-relaxed">
-                  Providing high-level administrative support, managing schedules, and ensuring operational efficiency for executive leadership.
-                </p>
-              </div>
 
-              {/* Role 2: Shared Value */}
+              {/* Role 1: Shared Value */}
               <div className="relative group">
                 <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-slate-500 bg-primary group-hover:border-accent group-hover:bg-accent transition-colors"></span>
                 <h4 className="text-xl font-semibold text-white">HR / Technical Support Specialist</h4>
@@ -44,6 +34,16 @@ const Experience: React.FC = () => {
                      <li>Web Administrator</li>
                    </ul>
                 </div>
+              </div>
+
+              {/* Role 2: Naija Nomads */}
+              <div className="relative group">
+                <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-accent bg-primary group-hover:bg-accent transition-colors shadow-[0_0_10px_rgba(56,189,248,0.5)]"></span>
+                <h4 className="text-xl font-semibold text-white group-hover:text-accent transition-colors">Executive Assistant</h4>
+                <p className="text-accent text-sm mb-2 font-mono">Naija Nomads, Lagos | Feb 2025 – March 2025</p>
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  Providing high-level administrative support, managing schedules, and ensuring operational efficiency for executive leadership.
+                </p>
               </div>
 
               {/* Role 3: MALhub */}

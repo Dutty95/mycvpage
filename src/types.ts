@@ -15,9 +15,14 @@ export interface ChatMessage {
   timestamp: Date;
 }
 
-export enum SkillCategory {
-  PROGRAMMING = 'Programming',
-  DATA = 'Data Analysis',
-  MANAGEMENT = 'Management',
-  SUPPORT = 'Support',
-}
+export type ChatRole = ChatMessage['role'];
+
+// Replace enum with const object
+export const SkillCategory = {
+  PROGRAMMING: 'Programming',
+  DATA: 'Data Analysis',
+  MANAGEMENT: 'Management',
+  SUPPORT: 'Support',
+} as const;
+
+export type SkillCategory = typeof SkillCategory[keyof typeof SkillCategory];

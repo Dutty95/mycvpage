@@ -49,7 +49,7 @@ const Experience: React.FC = () => {
               {/* Role 3: Naija Nomads */}
               <div className="relative group">
                 <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-slate-500 bg-primary group-hover:border-accent group-hover:bg-accent transition-colors"></span>
-                <h4 className="text-xl font-semibold text-white">Data Analyst</h4>
+                <h4 className="text-xl font-semibold text-white">Executive Assistant</h4>
                 <p className="text-slate-400 text-sm mb-2 font-mono">Naija Nomads, Lagos |Feb 2025 – March 2026</p>
                 <p className="text-slate-400 text-sm">
                   Providing high-level administrative support, managing schedules, and ensuring operational efficiency for executive leadership.

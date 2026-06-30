@@ -21,10 +21,20 @@ const Experience: React.FC = () => {
             </h3>
             <div className="space-y-12 border-l-2 border-slate-700 ml-3 pl-8 relative">
 
-              {/* Role 1: Shared Value */}
+              {/* Role 1: Regus */}
+              <div className="relative group">
+                <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-accent bg-primary group-hover:bg-accent transition-colors shadow-[0_0_10px_rgba(56,189,248,0.5)]"></span>
+                <h4 className="text-xl font-semibold text-white group-hover:text-accent transition-colors">Community Associate</h4>
+                <p className="text-accent text-sm mb-2 font-mono">Regus, Abuja | May 2026 – June 2026</p>
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  Providing high-level administrative support, managing schedules, and ensuring operational efficiency of the workspace.
+                </p>
+              </div>
+
+              {/* Role 2: Shared Value */}
               <div className="relative group">
                 <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-slate-500 bg-primary group-hover:border-accent group-hover:bg-accent transition-colors"></span>
-                <h4 className="text-xl font-semibold text-white">HR / Technical Support Specialist</h4>
+                <h4 className="text-xl font-semibold text-white">HR / IT Support Specialist</h4>
                 <p className="text-slate-400 text-sm mb-2 font-mono">Shared Value Global Concept, Ilorin | Jan 2022 – Present</p>
                 <div className="text-slate-400 text-sm leading-relaxed">
                    <p className="mb-2">Combined HR responsibilities with technical support oversight.</p>
@@ -36,17 +46,18 @@ const Experience: React.FC = () => {
                 </div>
               </div>
 
-              {/* Role 2: Naija Nomads */}
+              {/* Role 3: Naija Nomads */}
               <div className="relative group">
-                <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-accent bg-primary group-hover:bg-accent transition-colors shadow-[0_0_10px_rgba(56,189,248,0.5)]"></span>
-                <h4 className="text-xl font-semibold text-white group-hover:text-accent transition-colors">Executive Assistant</h4>
-                <p className="text-accent text-sm mb-2 font-mono">Naija Nomads, Lagos | Feb 2025 – March 2026</p>
-                <p className="text-slate-400 text-sm leading-relaxed">
+                <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-slate-500 bg-primary group-hover:border-accent group-hover:bg-accent transition-colors"></span>
+                <h4 className="text-xl font-semibold text-white">Data Analyst</h4>
+                <p className="text-slate-400 text-sm mb-2 font-mono">Naija Nomads, Lagos |Feb 2025 – March 2026</p>
+                <p className="text-slate-400 text-sm">
                   Providing high-level administrative support, managing schedules, and ensuring operational efficiency for executive leadership.
+
                 </p>
               </div>
 
-              {/* Role 3: MALhub */}
+              {/* Role 4: MALhub */}
               <div className="relative group">
                 <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-slate-500 bg-primary group-hover:border-accent group-hover:bg-accent transition-colors"></span>
                 <h4 className="text-xl font-semibold text-white">Data Analyst</h4>
@@ -56,7 +67,7 @@ const Experience: React.FC = () => {
                 </p>
               </div>
 
-              {/* Role 4: Manhardi */}
+              {/* Role 5: Manhardi */}
               <div className="relative group">
                 <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-slate-500 bg-primary group-hover:border-accent group-hover:bg-accent transition-colors"></span>
                 <h4 className="text-xl font-semibold text-white">Administrative Manager</h4>
@@ -68,7 +79,7 @@ const Experience: React.FC = () => {
                 </ul>
               </div>
 
-              {/* Role 5: Our Garden */}
+              {/* Role 6: Our Garden */}
               <div className="relative group">
                 <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-slate-500 bg-primary group-hover:border-accent group-hover:bg-accent transition-colors"></span>
                 <h4 className="text-xl font-semibold text-white">HR / Account Manager / Technical Support</h4>
@@ -80,7 +91,7 @@ const Experience: React.FC = () => {
                 </ul>
               </div>
 
-              {/* Role 6: Teaching & Early Career */}
+              {/* Role 7: Teaching & Early Career */}
               <div className="relative group">
                 <span className="absolute -left-[41px] top-1 h-5 w-5 rounded-full border-2 border-slate-700 bg-primary group-hover:border-slate-500 transition-colors"></span>
                 <h4 className="text-lg font-semibold text-slate-300">Early Career</h4>
@@ -173,6 +184,15 @@ const Experience: React.FC = () => {
                       <span className="text-[10px] font-mono bg-slate-700 text-slate-300 px-2 py-0.5 rounded">Jan 2024</span>
                     </div>
                     <p className="text-sm text-slate-400">Birdify - LMSAFP</p>
+                  </div>
+
+                  {/* Cert 5 */}
+                  <div className="group">
+                    <div className="flex justify-between items-start">
+                      <h5 className="text-white font-medium group-hover:text-accent transition-colors">IBM IT Support Specialist</h5>
+                      <span className="text-[10px] font-mono bg-slate-700 text-slate-300 px-2 py-0.5 rounded">Inview</span>
+                    </div>
+                    <p className="text-sm text-slate-400">IBM SkillBuild</p>
                   </div>
 
                 </div>

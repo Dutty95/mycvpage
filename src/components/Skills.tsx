@@ -17,8 +17,8 @@ const SKILLS_DATA = [
     category: "Management & HR",
     icon: "👔",
     items: [
-      { name: "HR Management", level: 95 },
-      { name: "Recruitment Strategy", level: 92 },
+      { name: "HR Management", level: 90 },
+      { name: "Recruitment Strategy", level: 85 },
       { name: "Payroll Processing", level: 90 },
       { name: "Performance Appraisal", level: 88 },
       { name: "Conflict Resolution", level: 95 },

@@ -4,8 +4,7 @@ const ROLES = [
   "HR Manager",
   "Python Developer",
   "Data Analyst",
-  "Account Manager",
-  "Executive Assistant",
+  "IT Support Specialist",
   "Web Designer"
 ];
 
@@ -79,7 +78,7 @@ const Hero: React.FC = () => {
       
       // Update and draw particles
       for (let i = 0; i < particles.length; i++) {
-        let p = particles[i];
+        const p = particles[i];
         
         // Move
         p.x += p.vx;
